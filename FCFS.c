@@ -10,7 +10,7 @@ int main()
 {
     int i,j,n;
     int p[MAX],at[MAX],bt[MAX],ct[MAX],tat[MAX],wt[MAX];
-
+    float totalWT,avgWT;
     printf("Enter the number of process: ");
     scanf("%d",&n);
 
@@ -56,7 +56,7 @@ int main()
     }
 
 
-    int previousct=0;  // here previousct means previous completion time.
+    int previousct=0;  //previous completion time.
 
     for(i=0;i<n;i++)
     {
@@ -65,6 +65,7 @@ int main()
         tat[i]=ct[i]-at[i];
         wt[i]=tat[i]-bt[i];
         previousct=ct[i];
+        totalWT=totalWT+wt[i];
     }
 
     // Print results
@@ -76,6 +77,8 @@ int main()
     {
         printf("P%d\t%d\t%d\t%d\t%d\t%d\n",p[i],at[i],bt[i],ct[i],tat[i],wt[i]);
     }
+    avgWT=totalWT/n;
+    printf("\nAverage Waiting Time: %.2f\n",avgWT);
 
     return 0;
 }
