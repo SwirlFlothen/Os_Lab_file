@@ -19,13 +19,13 @@ int main()
         scanf("%d",&p[i]);
     }
 
-    printf("Enter Arrival Time of the of the process:\n");
+    printf("Enter the Arrival Time of the process:\n");
     for(i=0; i < n; i++)
     {
         scanf("%d",&at[i]);
     }
 
-    printf("Enter Burst Times:\n");
+    printf("Enter the Burst Time of the process:\n");
     for(i=0;i<n;i++)
     {
         scanf("%d",&bt[i]);
