@@ -1,3 +1,8 @@
+// Name: Fatematuj Johora
+// ID: 22101148
+// Section: C2
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX 100
